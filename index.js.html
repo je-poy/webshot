@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Screenshot</title>
+	<link rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+	<div class="m-content">
+	   <h1>Sample WebcamShot with Filter</h1>
+
+	   <div class="photo-booth">
+	      <!-- local video stream will be rendered to the video tag -->
+	      <video autoplay></video>
+	      <!-- a copy of the stream will be made and css filters applied  -->
+	      <canvas></canvas>
+	   </div>
+	   <div class="buttons">
+	      <!-- call getUserMedia() to access webcam and give permission -->
+	      <button id="start">Access Webcam</button>
+	      <!-- take a snapshot from your webcam and render it to the canvas tag -->
+	      <button id="snapshot">Take a Snapshot</button>
+	      <!-- sort through the available css filters -->
+	      <button id="filter">Change Filter</button>
+	   </div>
+	</div>
+
+	<script type="text/javascript" src="navigator.js"></script>
+</body>
+</html>
